@@ -2,6 +2,12 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include<QPainter>
+#include<QSlider>
+#include<slider.h>
+#include<QChart.h>
+#include<chartview.h>
+#include<QPushButton.h>
 
 class Widget : public QWidget
 {
@@ -10,5 +16,10 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
+
+private:
+    QSlider *qslider;
+    slider *_slider;
+    ChartView *chartview;
 };
 #endif // WIDGET_H

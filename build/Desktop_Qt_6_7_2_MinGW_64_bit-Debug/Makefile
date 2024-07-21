@@ -263,6 +263,7 @@ Makefile: ../../SerialScope.pro ../../../../Qt6.7/6.7.2/mingw_64/mkspecs/feature
 		../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/qt_config.prf \
 		../../../../Qt6.7/6.7.2/mingw_64/mkspecs/win32-g++/qmake.conf \
 		../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/toolchain.prf \
 		../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/default_pre.prf \
@@ -288,11 +289,13 @@ Makefile: ../../SerialScope.pro ../../../../Qt6.7/6.7.2/mingw_64/mkspecs/feature
 		../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/yacc.prf \
 		../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/lex.prf \
 		../../SerialScope.pro \
+		../../../../Qt6.7/6.7.2/mingw_64/lib/Qt6Charts.prl \
+		../../../../Qt6.7/6.7.2/mingw_64/lib/Qt6OpenGLWidgets.prl \
 		../../../../Qt6.7/6.7.2/mingw_64/lib/Qt6Widgets.prl \
+		../../../../Qt6.7/6.7.2/mingw_64/lib/Qt6OpenGL.prl \
 		../../../../Qt6.7/6.7.2/mingw_64/lib/Qt6Gui.prl \
 		../../../../Qt6.7/6.7.2/mingw_64/lib/Qt6Core.prl \
 		../../../../Qt6.7/6.7.2/mingw_64/lib/Qt6EntryPoint.prl \
-		.qmake.stash \
 		../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ..\..\SerialScope.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 ../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/spec_pre.prf:
@@ -488,6 +491,7 @@ Makefile: ../../SerialScope.pro ../../../../Qt6.7/6.7.2/mingw_64/mkspecs/feature
 ../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/qt_config.prf:
 ../../../../Qt6.7/6.7.2/mingw_64/mkspecs/win32-g++/qmake.conf:
 ../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/exclusive_builds.prf:
 ../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/toolchain.prf:
 ../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/default_pre.prf:
@@ -513,11 +517,13 @@ Makefile: ../../SerialScope.pro ../../../../Qt6.7/6.7.2/mingw_64/mkspecs/feature
 ../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/yacc.prf:
 ../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/lex.prf:
 ../../SerialScope.pro:
+../../../../Qt6.7/6.7.2/mingw_64/lib/Qt6Charts.prl:
+../../../../Qt6.7/6.7.2/mingw_64/lib/Qt6OpenGLWidgets.prl:
 ../../../../Qt6.7/6.7.2/mingw_64/lib/Qt6Widgets.prl:
+../../../../Qt6.7/6.7.2/mingw_64/lib/Qt6OpenGL.prl:
 ../../../../Qt6.7/6.7.2/mingw_64/lib/Qt6Gui.prl:
 ../../../../Qt6.7/6.7.2/mingw_64/lib/Qt6Core.prl:
 ../../../../Qt6.7/6.7.2/mingw_64/lib/Qt6EntryPoint.prl:
-.qmake.stash:
 ../../../../Qt6.7/6.7.2/mingw_64/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\..\SerialScope.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
